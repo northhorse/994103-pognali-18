@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Хоружев](https://up.htmlacademy.ru/adaptive/18/user/994103).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Горбачев](https://up.htmlacademy.ru/htmlcss/26/user/92028).
 
 ---
 
