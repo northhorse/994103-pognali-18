@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-img" src="https://via.placeholder.com/100x20" width="100" height="20" alt="Погнали">
+        </a>
+  <!-- main-nav -->
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Попутчики</a>
+            </li>
+          </ul>
+
+          <button class="main-nav__login">Авторизация</button>
+
+          <ul class="main-nav__contacts contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link contacts-list__link--phone" href="tel:88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link contacts-list__link--mail" href="">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__social social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--facebook" href="">Фейсбук</a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--vkontakte" href="">Вконтакте</a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--instagram" href="">Инстаграм</a>
+            </li>
+          </ul>
+        </nav>
+
+        <strong class="page-header__intro">Попутчики</strong>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <h1 class="visually-hidden">Каталог попутчиков. С множеством фильтров</h1>
+
+      <section class="filters"></section>
+
+
+<!-- Секция список компаньенов -->
+<!-- ИСПРАВИЬ 6.8. Изображение и имя попутчика — ссылки на страницу его профиля. -->
+
+      <section class="companions-catalog">
+        <div class="container">
+
+          <ul class="companions-catalog__list satellite-list">
+
+            <li class="satellite-list__item">
+
+              <div class="satellite-list__top-wrapper">
+                <a class="satellite-list__img-container" href="#">
+                  <img src="https://via.placeholder.com/70x70" width="70" height="70">
+                </a>
+                <div class="satellite-list__name-wrapper">
+                  <a class="satellite-list__title satellite-list__title--offline" href="#">Таня Фирсова</a>
+                  <span class="satellite-list__like-count">1,5 M</span>
+                </div>
+              </div>
+
+              <ul class="satellite-list__tags tags-list">
+                <li class="tags-list__item">
+                  #ЗОЖ
+                </li>
+                <li class="tags-list__item">
+                  #ПП
+                </li>
+                <li class="tags-list__item">
+                  #Фитнес
+                </li>
+                <li class="tags-list__item">
+                  #пляж
+                </li>
+                <li class="tags-list__item">
+                  #авокадо
+                </li>
+                <li class="tags-list__item">
+                  #смузи
+                </li>
+              </ul>
+
+              <div class="satellite-list__mid-wrapper">
+                <p class="satellite-list__want-to-go">хочет посетить:</p>
+                <ul class="satellite-list__flag-list flag-list">
+                  <li class="flag-list__item flag-list__item--shri">
+                    <p class="flag-list__country-name">Шри ланка</p>
+                  </li>
+                  <li class="flag-list__item flag-list__item--thai">
+                    <p class="flag-list__country-name">Тайланд</p>
+                  </li>
+                  <li class="flag-list__item flag-list__item--seych">
+                    <p class="flag-list__country-name">Сейшелы</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="satellite-list__bottom-wrapper">
+                <p class="satellite-list__traffic-title">транспорт:</p>
+                <ul class="satellite-list__traffic-icon traffic-list">
+                  <li class="traffic-list__item traffic-list__item--plane traffic-list__item--on">
+                  </li>
+                  <li class="traffic-list__item traffic-list__item--bus traffic-list__item--off">
+                  </li>
+                  <li class="traffic-list__item traffic-list__item--bicycle traffic-list__item--off">
+                  </li>
+                  <li class="traffic-list__item traffic-list__item--run traffic-list__item--off">
+                  </li>
+                </ul>
+                <p class="satellite-list__level-title">левел:</p>
+                <div class="satellite-list__level level">
+                  <span class="level__count">99</span>
+                </div>
+              </div>
+
+              <button class="satellite-list__to-call">Позвать</button>
+            </li>
+
+            <li class="satellite-list__item">
+
+              <div class="satellite-list__top-wrapper">
+                <a class="satellite-list__img-container" href="#">
+                  <img src="https://via.placeholder.com/70x70" width="70" height="70">
+                </a>
+                <div class="satellite-list__name-wrapper">
+                  <a class="satellite-list__title satellite-list__title--offline" href="#">Петя Демин</a>
+                  <span class="satellite-list__like-count">150</span>
+                </div>
+              </div>
+
+              <ul class="satellite-list__tags tags-list">
+                <li class="tags-list__item">
+                  #бургер
+                </li>
+                <li class="tags-list__item">
+                  #бар
+                </li>
+                <li class="tags-list__item">
+                  #футбол
+                </li>
+                <li class="tags-list__item">
+                  #концерт
+                </li>
+                <li class="tags-list__item">
+                  #крафт
+                </li>
+              </ul>
+
+              <div class="satellite-list__mid-wrapper">
+                <p class="satellite-list__want-to-go">хочет посетить:</p>
+                <ul class="satellite-list__flag-list flag-list">
+                  <li class="flag-list__item flag-list__item--belg">
+                    <p class="flag-list__country-name">Бельгия</p>
+                  </li>
+                  <li class="flag-list__item flag-list__item--czech">
+                    <p class="flag-list__country-name">Чехия</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="satellite-list__bottom-wrapper">
+                <p class="satellite-list__traffic-title">транспорт:</p>
+                <ul class="satellite-list__traffic-icon traffic-list">
+                  <li class="traffic-list__item traffic-list__item--plane traffic-list__item--on">
+                  </li>
+                  <li class="traffic-list__item traffic-list__item--bus traffic-list__item--on">
+                  </li>
+                  <li class="traffic-list__item traffic-list__item--bicycle traffic-list__item--off">
+                  </li>
+                  <li class="traffic-list__item traffic-list__item--run traffic-list__item--on">
+                  </li>
+                </ul>
+                <p class="satellite-list__level-title">левел:</p>
+                <div class="satellite-list__level level">
+                  <span class="level__count">80</span>
+                </div>
+              </div>
+
+              <button class="satellite-list__to-call">Позвать</button>
+            </li>
+
+            <li class="satellite-list__item">
+
+              <div class="satellite-list__top-wrapper">
+                <a class="satellite-list__img-container" href="#">
+                  <img src="https://via.placeholder.com/70x70" width="70" height="70">
+                </a>
+                <div class="satellite-list__name-wrapper">
+                  <a class="satellite-list__title satellite-list__title--offline" href="#">Марк Смолов</a>
+                  <span class="satellite-list__like-count">1700</span>
+                </div>
+              </div>
+
+              <ul class="satellite-list__tags tags-list">
+                <li class="tags-list__item">
+                  #рэп
+                </li>
+                <li class="tags-list__item">
+                  #тату
+                </li>
+                <li class="tags-list__item">
+                  #хайпбист
+                </li>
+                <li class="tags-list__item">
+                  #кроссовки
+                </li>
+                <li class="tags-list__item">
+                  #суприм
+                </li>
+              </ul>
+
+              <div class="satellite-list__mid-wrapper">
+                <p class="satellite-list__want-to-go">хочет посетить:</p>
+                <ul class="satellite-list__flag-list flag-list">
+                  <li class="flag-list__item flag-list__item--usa">
+                    <p class="flag-list__country-name">США</p>
+                  </li>
+                  <li class="flag-list__item flag-list__item--australia">
+                    <p class="flag-list__country-name">Австралия</p>
+                  </li>
+                  <li class="flag-list__item flag-list__item--dominican">
+                    <p class="flag-list__country-name">Доминикана</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="satellite-list__bottom-wrapper">
+                <p class="satellite-list__traffic-title">транспорт:</p>
+                <ul class="satellite-list__traffic-icon traffic-list">
+                  <li class="traffic-list__item traffic-list__item--plane traffic-list__item--on">
+                  </li>
+                  <li class="traffic-list__item traffic-list__item--bus traffic-list__item--off">
+                  </li>
+                  <li class="traffic-list__item traffic-list__item--bicycle traffic-list__item--on">
+                  </li>
+                  <li class="traffic-list__item traffic-list__item--run traffic-list__item--off">
+                  </li>
+                </ul>
+                <p class="satellite-list__level-title">левел:</p>
+                <div class="satellite-list__level level">
+                  <span class="level__count">25</span>
+                </div>
+              </div>
+
+              <button class="satellite-list__to-call">Позвать</button>
+            </li>
+
+            <li class="satellite-list__item">
+
+              <div class="satellite-list__top-wrapper">
+                <a class="satellite-list__img-container" href="#">
+                  <img src="https://via.placeholder.com/70x70" width="70" height="70">
+                </a>
+                <div class="satellite-list__name-wrapper">
+                  <a class="satellite-list__title satellite-list__title--online" href="#">Лариса Роговая</a>
+                  <span class="satellite-list__like-count">23</span>
+                </div>
+              </div>
+
+              <ul class="satellite-list__tags tags-list">
+                <li class="tags-list__item">
+                  #образование
+                </li>
+                <li class="tags-list__item">
+                  #карьера
+                </li>
+                <li class="tags-list__item">
+                  #учеба
+                </li>
+                <li class="tags-list__item">
+                  #линкедин
+                </li>
+              </ul>
+
+              <div class="satellite-list__mid-wrapper">
+                <p class="satellite-list__want-to-go">хочет посетить:</p>
+                <ul class="satellite-list__flag-list flag-list">
+                  <li class="flag-list__item flag-list__item--grbritain">
+                    <p class="flag-list__country-name">Великобритания</p>
+                  </li>
+                  <li class="flag-list__item flag-list__item--germany">
+                    <p class="flag-list__country-name">Германия</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="satellite-list__bottom-wrapper">
+                <p class="satellite-list__traffic-title">транспорт:</p>
+                <ul class="satellite-list__traffic-icon traffic-list">
+                  <li class="traffic-list__item traffic-list__item--plane traffic-list__item--on">
+                  </li>
+                  <li class="traffic-list__item traffic-list__item--bus traffic-list__item--on">
+                  </li>
+                  <li class="traffic-list__item traffic-list__item--bicycle traffic-list__item--off">
+                  </li>
+                  <li class="traffic-list__item traffic-list__item--run traffic-list__item--off">
+                  </li>
+                </ul>
+                <p class="satellite-list__level-title">левел:</p>
+                <div class="satellite-list__level level">
+                  <span class="level__count">50</span>
+                </div>
+              </div>
+
+              <button class="satellite-list__to-call">Позвать</button>
+            </li>
+
+          </ul>
+
+          <a class="companions-catalog__see-all" href="allcompanions.html">Показать еще</a>
+
+          <ul class="companions-catalog__paginator paginator">
+            <li class="paginator__item"><a class="paginator__link paginator__link--back" href="#">Назад</a></li>
+            <li class="paginator__item"><a class="paginator__link paginator__link--forward" href="#">Вперед</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <strong class="main-footer__slogan">Погнали?</strong>
+      <ul class="main-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="#">Фейсбук</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vkontakte" href="#">Вконтакте</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--instagram" href="#">Инстаграм</a>
+        </li>
+      </ul>
+      <p class="main-footer__created-by">Разработано</p>
+    </footer>
+  </body>
+</html>
