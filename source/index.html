@@ -14,88 +14,92 @@
   <!-- main-nav -->
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a>О сервисе</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">Направления</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">Попутчики</a>
-              </li>
-            </ul>
 
-            <button class="main-nav__button big-button">Авторизация</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Попутчики</a>
+            </li>
+          </ul>
 
-            <ul class="main-nav__contacts contacts-list">
-              <li class="contacts-list__item">
-                <a class="contacts-list__phone-link" href="tel:88005558628">8 800 555-86-28</a>
-              </li>
-              <li class="contacts-list__item">
-                <a class="contacts-list__mail-link" href="">mail@htmlacademy.ru</a>
-              </li>
-            </ul>
+          <button class="main-nav__login">Авторизация</button>
 
-            <ul class="main-nav__social social-list">
-              <li class="social-list__item">
-                <a class="social-list__link facebook-link" href="">Фейсбук</a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link vkontakte-link" href="">Вконтакте</a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link instagram-link" href="">Инстаграм</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="main-nav__contacts contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link contacts-list__link--phone" href="tel:88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link contacts-list__link--mail" href="">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__social social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--facebook" href="">Фейсбук</a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--vkontakte" href="">Вконтакте</a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--instagram" href="">Инстаграм</a>
+            </li>
+          </ul>
         </nav>
   <!-- /main nav -->
-        <strong>В путешествие с крутыми попутчиками!</strong>
+        <div class="promo">
+          <strong class="promo__slogan">В путешествие с крутыми попутчиками!</strong>
 
-        <ul class="page-header__list user-list">
-          <li class="user-list__item">
-            <button class="user-list__button call-button">Позвонить</button>
-          </li>
-          <li class="user-list__item">
-            <button class="user-list__button message-button">Написать</button>
-          </li>
-          <li class="user-list__item">
-            <button class="user-list__button big-button">Авторизация</button>
-          </li>
-        </ul>
+          <ul class="page-header__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__button user-list__button--call" href="#">Позвонить</a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__button user-list__button--message" href="#">Написать</a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__button user-list__button--login" href="#">Авторизация</a>
+            </li>
+          </ul>
 
-        <blockquote class="page-header__quote">
-          «Лучшее приложение, что я видел в жизни!»
-        </blockquote>
-        <cite class="page-header__cite">
-          Мурат Эльтазин главный редактор газеты «гаджетлайф»
-        </cite>
+          <blockquote class="page-header__quote">
+            «Лучшее приложение, что я видел в жизни!»
+          </blockquote>
+          <cite class="page-header__cite">
+            Мурат Эльтазин главный редактор газеты «гаджетлайф»
+          </cite>
 
-        <ol class="page-header__step-list step-list">
-          <li class="step-list__item first-step">Выберите направление</li>
-          <li class="step-list__item second-step">Изучите идеи путешественников</li>
-          <li class="step-list__item third-step">Находите тех, кто похож на вас</li>
-          <li class="step-list__item fourth-step">Путешествуйте вместе</li>
-        </ol>
+          <ol class="page-header__step-list step-list">
+            <li class="step-list__item step-list__item--first">Выберите направление</li>
+            <li class="step-list__item step-list__item--second">Изучите идеи путешественников</li>
+            <li class="step-list__item step-list__item--third">Находите тех, кто похож на вас</li>
+            <li class="step-list__item step-list__item--fourth">Путешествуйте вместе</li>
+          </ol>
+        </div>
       </div>
     </header>
 <!-- /header -->
+
 <!-- main -->
     <main class="main-content">
       <h1 class="visually-hidden">Погнали!? Сервис поиска попутчиков для совместного путешествия!</h1>
+
 <!-- секция О сервисе -->
       <section class="about-service">
         <div class="container">
-          <h2 class="about-service__title sec-title">О сервисе</h2>
-          <p>Любое путешествие веселее
+          <h2 class="about-service__title">О сервисе</h2>
+          <p class="about-service__slogan">
+            Любое путешествие веселее
             с попутчиками, которые на
             одной волне с тобой! Делитесь
             своими идеями путешествий и
             черпайте вдохновение в чужих.
           </p>
-          <strong>
+          <strong class="about-service__intro">
             А если найдете кого-то
             близкого по духу — скорее
             зовите в совместный трип!
@@ -107,8 +111,8 @@
 <!-- секция направления -->
       <section class="destinations">
         <div class="container">
-          <h2 class="destinations__title sec-title">Направления</h2>
-          <p>
+          <h2 class="destinations__title">Направления</h2>
+          <p class="destinations__slogan">
             Мы не продаем туры
             и ничего не рекламируем.
             Люди сами пишут о странах,
@@ -119,42 +123,42 @@
           <ul class="destinations__list list-of-countries">
             <li class=" list-of-countries__item">
               <figure class="list-of-countries__img-container">
-                <img src="https://via.placeholder.com/270x110" width="270" height="110">
+                <img class="list-of-countries__img" src="https://via.placeholder.com/270x110" width="270" height="110">
               </figure>
-              <div class="list-of-countries__wrp">
+              <div class="list-of-countries__description">
                 <h3 class="list-of-countries__title">Тайланд</h3>
-                <p>Джунгли зовут!</p>
-                <span class="list-of-countries__flag flag-thai"></span>
-                <span class="list-of-countries__counter counter-thai">18321</span>
+                <p class="list-of-countries__slogan">Джунгли зовут!</p>
+                <span class="list-of-countries__flag list-of-countries__flag--thai"></span>
+                <span class="list-of-countries__counter list-of-countries__counter--thai">18321</span>
               </div>
             </li>
 
             <li class=" list-of-countries__item">
               <figure class="list-of-countries__img-container">
-                <img src="https://via.placeholder.com/270x110" width="270" height="110">
+                <img class="list-of-countries__img" src="https://via.placeholder.com/270x110" width="270" height="110">
               </figure>
-              <div class="list-of-countries__wrp">
+              <div class="list-of-countries__description">
                 <h3 class="list-of-countries__title">Франция</h3>
-                <p>Трэ бьен, манифик!</p>
-                <span class="list-of-countries__flag flag-france"></span>
-                <span class="list-of-countries__counter counter-france">12518</span>
+                <p class="list-of-countries__slogan">Трэ бьен, манифик!</p>
+                <span class="list-of-countries__flag list-of-countries__flag--france"></span>
+                <span class="list-of-countries__counter list-of-countries__counter--france">12518</span>
               </div>
             </li>
 
             <li class=" list-of-countries__item">
               <figure class="list-of-countries__img-container">
-                <img src="https://via.placeholder.com/270x110" width="270" height="110">
+                <img class="list-of-countries__img" src="https://via.placeholder.com/270x110" width="270" height="110">
               </figure>
-              <div class="list-of-countries__wrp">
+              <div class="list-of-countries__description">
                 <h3 class="list-of-countries__title">Чехия</h3>
-                <p>Закоулки старой Европы</p>
-                <span class="list-of-countries__flag flag-czech"></span>
-                <span class="list-of-countries__counter counter-czech">5362</span>
+                <p class="list-of-countries__slogan">Закоулки старой Европы</p>
+                <span class="list-of-countries__flag list-of-countries__flag--czech"></span>
+                <span class="list-of-countries__counter list-of-countries__counter--czech">5362</span>
               </div>
             </li>
           </ul>
 
-          <a class="destinations__link-show-all big-link" href="form.html">Показать все</a>
+          <a class="destinations__show-all" href="form.html">Показать все</a>
         </div>
       </section>
 <!-- /секция направления -->
@@ -162,37 +166,38 @@
 <!-- секция попутчики -->
       <section class="companions">
         <div class="container">
-          <h2 class=" companions__title sec-title">Попутчики</h2>
-          <p>
+          <h2 class=" companions__title">Попутчики</h2>
+          <p class="companions__slogan">
             Все мы индивидуальны и у
             каждого свой взгляд на
             идеальный отдых. Одному
             нужен пляж и коктейль, а
             другому маршрут для хайкинга.
           </p>
-          <b>
+          <b class="companions__intro">
             Теперь можно легко найти
             единомышленников!
           </b>
+
           <ul class="companions__list satellite-list">
 <!-- ТАНЮХА -->
             <li class="satellite-list__item">
               <figure class="satellite-list__img-container">
-                <img src="https://via.placeholder.com/270x270" width="270" height="270">
+                <img class="satellite-list__img" src="https://via.placeholder.com/270x270" width="270" height="270">
               </figure>
-              <div class="satellite-list__lvl-container lvl-container">
-                <span class="lvl-container__lvl">99</span>
-                <span class="lvl-container-level">level</span>
+              <div class="satellite-list__level level">
+                <span class="level__count">99</span>
+                <span class="level__text">level</span>
               </div>
               <ul class="satellite-list__flag-list flag-list">
-                <li class="flag-list__item flag-shri">
+                <li class="flag-list__item flag-list__item--shri">
                 </li>
-                <li class="flag-list__item flag-thai">
+                <li class="flag-list__item flag-list__item--thai">
                 </li>
-                <li class="flag-list__item flag-seych">
+                <li class="flag-list__item flag-list__item--seych">
                 </li>
               </ul>
-              <h3 class="satellite-list__title satellite-list--offline">Таня Фирсова</h3>
+              <h3 class="satellite-list__title satellite-list__title--offline">Таня Фирсова</h3>
               <ul class="satellite-list__tags tags-list">
                 <li class="tags-list__item">
                   #ЗОЖ
@@ -214,13 +219,13 @@
                 </li>
               </ul>
               <ul class="satellite-list__traffic-icon traffic-list">
-                <li class="traffic-list__item plane-icon traffic-list--on">
+                <li class="traffic-list__item traffic-list__item--plane traffic-list__item--on">
                 </li>
-                <li class="traffic-list__item bus-icon traffic-list--off">
+                <li class="traffic-list__item traffic-list__item--bus traffic-list__item--off">
                 </li>
-                <li class="traffic-list__item bicycle-icon traffic-list--off">
+                <li class="traffic-list__item traffic-list__item--bicycle traffic-list__item--off">
                 </li>
-                <li class="traffic-list__item run-icon traffic-list--off">
+                <li class="traffic-list__item traffic-list__item--run traffic-list__item--off">
                 </li>
               </ul>
             </li>
@@ -229,17 +234,19 @@
                 <figure class="satellite-list__img-container">
                   <img src="https://via.placeholder.com/270x270" width="270" height="270">
                 </figure>
-                <div class="satellite-list__lvl-container lvl-container">
-                  <span class="lvl-container__lvl">80</span>
-                  <span class="lvl-container-level">level</span>
+                <div class="satellite-list__level level">
+                  <span class="level__count">80</span>
+                  <span class="level__text">level</span>
                 </div>
+
                 <ul class="satellite-list__flag-list flag-list">
-                  <li class="flag-list__item flag-belg">
+                  <li class="flag-list__item flag-list__item--belg">
                   </li>
-                  <li class="flag-list__item flag-czech">
+                  <li class="flag-list__item flag-list__item--czech">
                   </li>
                 </ul>
-                <h3 class="satellite-list__title satellite-list--online">Петя Демин</h3>
+
+                <h3 class="satellite-list__title satellite-list__title--online">Петя Демин</h3>
                 <ul class="satellite-list__tags tags-list">
                   <li class="tags-list__item">
                     #бургер
@@ -258,18 +265,18 @@
                   </li>
                 </ul>
                 <ul class="satellite-list__traffic-icon traffic-list">
-                  <li class="traffic-list__item plane-icon traffic-list--on">
+                  <li class="traffic-list__item traffic-list__item--plane traffic-list__item--on">
                   </li>
-                  <li class="traffic-list__item bus-icon traffic-list--on">
+                  <li class="traffic-list__item traffic-list__item--bus traffic-list__item--on">
                   </li>
-                  <li class="traffic-list__item bicycle-icon traffic-list--off">
+                  <li class="traffic-list__item traffic-list__item--bicycle traffic-list__item--off">
                   </li>
-                  <li class="traffic-list__item run-icon traffic-list--on">
+                  <li class="traffic-list__item traffic-list__item--run traffic-list__item--on">
                   </li>
                 </ul>
               </li>
           </ul>
-          <a class="companions__link-show-all big-link" href="catalog.html">Показать всех</a>
+          <a class="companions__show-all" href="catalog.html">Показать всех</a>
         </div>
       </section>
 <!-- /секция попутчики -->
@@ -277,20 +284,22 @@
 <!-- секция добавь свой профиль -->
       <section class="get-started">
         <div class="container">
-          <h2 class="get-started__title sec-title">Добавьте свой профиль</h2>
-          <dvi class="get-started__rates">непонятная фигня напротив заголовка</dvi>
+          <h2 class="get-started__title">Добавьте свой профиль</h2>
+          <figure class="get-started__img-container">
+            <img class="get-started__img" src="https://via.placeholder.com/99x99" width="99" height="99">
+          </figure>
           <ol class="get-started__rates-list rates-list">
             <li class="rates-list__item">
-              <p>Базовое размещение</p>
-              <span>Бесплатно</span>
+              <p class="rates-list__option">Базовое размещение</p>
+              <span class="rates-list__price">Бесплатно</span>
             </li>
             <li class="rates-list__item">
-              <p>Вывод на первых позициях</p>
-              <span>99 руб./мес</span>
+              <p class="rates-list__option">Вывод на первых позициях</p>
+              <span class="rates-list__price">99 руб./мес</span>
             </li>
             <li class="rates-list__item">
-              <p>Кастомный цвет карточки</p>
-              <span>59 руб./мес</span>
+              <p class="rates-list__option">Кастомный цвет карточки</p>
+              <span class="rates-list__price">59 руб./мес</span>
             </li>
           </ol>
           <a class="rates-list__show-business" href="business-rates.html">Показать тарифы для бизнеса</a>
@@ -308,16 +317,16 @@
 
 <!-- футер -->
       <footer class="main-footer">
-        <strong>Погнали?</strong>
+        <strong class="main-footer__slogan">Погнали?</strong>
         <ul class="main-footer__social social-list">
           <li class="social-list__item">
-            <a class="social-list__link facebook-link" href="">Фейсбук</a>
+            <a class="social-list__link social-list__link--facebook" href="#">Фейсбук</a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link vkontakte-link" href="">Вконтакте</a>
+            <a class="social-list__link social-list__link--vkontakte" href="#">Вконтакте</a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link instagram-link" href="">Инстаграм</a>
+            <a class="social-list__link social-list__link--instagram" href="#">Инстаграм</a>
           </li>
         </ul>
         <p class="main-footer__created-by">Разработано</p>
