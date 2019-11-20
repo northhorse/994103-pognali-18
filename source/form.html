@@ -55,6 +55,216 @@
     </header>
 
     <main class="main-content">
+      <h1 class="visually-hidden">Планирование путешествий</h1>
+
+      <section class="profile">
+        <h2 class="visually-hidden">Ваш профиль</h2>
+        <div class="top-wrapper">
+          <div class="profile__level level">
+            <span class="level__count">88</span>
+            <span class="level__text">level</span>
+          </div>
+          <figure class="profile__img-container" href="#">
+            <img src="https://via.placeholder.com/70x70" width="100" height="100">
+          </figure>
+        </div>
+        <button class="profile__change-photo">Сменить фото</button>
+
+
+        <textarea class="profile__tag-field">
+          не понял я тз, давай на консультации разберем этот момент
+        </textarea>
+
+        <p class="profile__traffic-title">транспорт:</p>
+        <ul class="profile__traffic-icon traffic-list">
+          <li class="traffic-list__item traffic-list__item--plane traffic-list__item--on">
+          </li>
+          <li class="traffic-list__item traffic-list__item--bus traffic-list__item--on">
+          </li>
+          <li class="traffic-list__item traffic-list__item--bicycle traffic-list__item--off">
+          </li>
+          <li class="traffic-list__item traffic-list__item--run traffic-list__item--on">
+          </li>
+        </ul>
+      </section>
+
+      <section class="my-plans">
+        <h2 class="my-plans__title">Мои планы:</h2>
+
+        <ol class="my-plans__list plan-list">
+          <li class="plan-list__item">
+            <p class="plan-list__country">Франция, Италия</p>
+            <span class="my-plans__companions-counter">3</span>
+            <p class="my-plans__companions">Попутчика</p>
+            <span class="my-plans__start-travel">26 Мар</span>
+            <span class="my-plans__end-travel">29 Мар</span>
+            <button class="my-plans__change">Изменить</button>
+          </li>
+          <li class="plan-list__item">
+            <p class="plan-list__country">Тайланд, Индонезия</p>
+            <span class="my-plans__companions-counter">1</span>
+            <p class="my-plans__companions">Попутчик</p>
+            <span class="my-plans__start-travel">1 Июл</span>
+            <span class="my-plans__end-travel">15 Июл</span>
+            <button class="my-plans__change">Изменить</button>
+          </li>
+        </ol>
+      </section>
+
+      <section class="new-plan">
+        <h2 class="new-plan__title">Добавить план:</h2>
+        <ul class="new-plan__steps steps">
+          <li class="steps__item steps__item--active"></li>
+          <li class="steps__item"></li>
+          <li class="steps__item"></li>
+        </ul>
+
+        <form class="new-plan__add add-plan">
+          <fieldset class="add-plan__first-step first-step">
+            <legend class="first-step__title">Шаг 1. Даты пребывания</legend>
+            <p class="first-step__intro">
+              Укажите предпочтительное
+              количество попутчиков, которых
+              вы хотели бы позвать в поездку
+              и ее предполагаемую
+              длительность.
+            </p>
+
+            <div class="first-step__companions companions-options">
+              <p class="companions-options__title">Ищу попутчиков</p>
+              <span class="companions-options__unit">чел.</span>
+              <div class="companions-options__total">
+                <span class="companions-options__counter">2</span>
+                <span class="companions-options__down">-</span>
+                <span class="companions-options__up">+</span>
+              </div>
+            </div>
+
+            <div class="first-step__durations durations-options">
+              <p class="durations-options__title">Длительность</p>
+              <span class="durations-options__unit">дн.</span>
+              <div class="durations-options__total">
+                <span class="durations-options__counter">2</span>
+                <span class="durations-options__down">-</span>
+                <span class="durations-options__up">+</span>
+              </div>
+            </div>
+
+            <input class="first-step__children" type="checkbox" name="childrens" id="children" checked>
+            <label for="children">Можно с детьми</label>
+
+            <div class="first-step__calendar-container calendar">
+              <div class="calendar__month month">
+                <span class="month__previous"></span>
+                <span class="month__counter">Март 2019</span>
+                <span class="month__next"></span>
+              </div>
+
+              <table class="calendar__days days">
+                <tr class="days__week week">
+                  <td class="week__item">П</td>
+                  <td class="week__item">В</td>
+                  <td class="week__item">С</td>
+                  <td class="week__item">Ч</td>
+                  <td class="week__item">П</td>
+                  <td class="week__item week__item--red">С</td>
+                  <td class="week__item week__item--red">В</td>
+                </tr>
+                <tr>
+                  <td class="days__item days__item--past-day">23</td>
+                  <td class="days__item days__item--past-day">24</td>
+                  <td class="days__item days__item--past-day">25</td>
+                  <td class="days__item days__item--past-day">26</td>
+                  <td class="days__item days__item--past-day">27</td>
+                  <td class="days__item days__item--past-day">28</td>
+                  <td class="days__item days__item--past-day">1</td>
+                </tr>
+                <tr>
+                  <td class="days__item days__item--past-day">2</td>
+                  <td class="days__item days__item--past-day">3</td>
+                  <td class="days__item days__item--past-day">4</td>
+                  <td class="days__item days__item--past-day">5</td>
+                  <td class="days__item days__item--past-day">6</td>
+                  <td class="days__item days__item--past-day">7</td>
+                  <td class="days__item days__item--past-day">8</td>
+                </tr>
+                <tr>
+                  <td class="days__item days__item--past-day">9</td>
+                  <td class="days__item days__item--past-day">10</td>
+                  <td class="days__item days__item--past-day">11</td>
+                  <td class="days__item days__item--past-day">12</td>
+                  <td class="days__item days__item--past-day">13</td>
+                  <td class="days__item days__item--past-day">14</td>
+                  <td class="days__item days__item--past-day">15</td>
+                </tr>
+                <tr>
+                  <td class="days__item days__item--past-day">16</td>
+                  <td class="days__item days__item--past-day">17</td>
+                  <td class="days__item days__item--past-day">18</td>
+                  <td class="days__item days__item--past-day">19</td>
+                  <td class="days__item days__item--past-day">20</td>
+                  <td class="days__item days__item--past-day">21</td>
+                  <td class="days__item days__item--past-day">22</td>
+                </tr>
+                <tr>
+                  <td class="days__item days__item--past-day">23</td>
+                  <td class="days__item days__item--past-day">24</td>
+                  <td class="days__item days__item--past-day">25</td>
+                  <td class="days__item days__item--today days__item--selected">26</td>
+                  <td class="days__item days__item--selected">27</td>
+                  <td class="days__item days__item--selected">28</td>
+                  <td class="days__item">29</td>
+                </tr>
+                <tr>
+                  <td class="days__item">30</td>
+                  <td class="days__item">31</td>
+                  <td class="days__item">1</td>
+                  <td class="days__item">2</td>
+                  <td class="days__item">3</td>
+                  <td class="days__item">4</td>
+                  <td class="days__item">5</td>
+                </tr>
+              </table>
+            </div>
+            <a class="first-step__next-step" href="#">Следующий шаг</a>
+          </fieldset>
+
+          <fieldset class="add-plan__second-step second-step">
+            <legend class="second-step__title">Шаг 2. Маршрут</legend>
+            <p class="second-step__intro">
+              Укажите страны, которые вы
+              хотели по посетить. Это может
+              быть одна или сразу несколько.
+            </p>
+            <!-- ох жесть пошла, не знаю как это оформить -->
+
+            <a class="second-step__next-step" href="#">Следующий шаг</a>
+            <a class="second-step__back-step" href="#">На шаг назад</a>
+          </fieldset>
+
+          <fieldset class="add-plan__third-step third-step">
+            <legend class="third-step__title">Шаг 3. Развлечения</legend>
+            <p class="third-step__intro">
+              Наконец, расскажите о своих
+              планах времяпровождения.
+              Можно писать в свободной
+              форме и ставить тэги.
+            </p>
+            <!-- название страны и флаг -->
+            <textarea>План действий</textarea>
+            <!-- название страны и флаг -->
+            <textarea>
+              Пить пиво и лазить
+              по старым замкам, наслаждаться архитектурой
+              и вот это все.
+            </textarea>
+            <button class="third-step__submit" type="submit">Отправить</button>
+            <a class="third-step__back-step" href="#">На шаг назад</a>
+          </fieldset>
+        </form>
+
+
+      </section>
 
     </main>
 

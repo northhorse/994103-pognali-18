@@ -57,11 +57,141 @@
     <main class="main-content">
       <h1 class="visually-hidden">Каталог попутчиков. С множеством фильтров</h1>
 
-      <section class="filters"></section>
+      <section class="filters">
+        <h2 class="filters__title">
+          Фильтрация по странам
+        </h2>
+        <button class="filters__open" type="button"></button>
+        <ul class="filters__continents continents-list">
+          <li class="continents-list__item continents-list__item--active">Европа</li>
+          <li class="continents-list__item">Азия</li>
+          <li class="continents-list__item">Америка</li>
+          <li class="continents-list__item">Острова</li>
+        </ul>
 
+        <table class="filters__alphabet alphabet">
+          <tr>
+            <td class="alphabet__item alphabet__item--active">А</td>
+            <td class="alphabet__item">Б</td>
+            <td class="alphabet__item">В</td>
+            <td class="alphabet__item">Г</td>
+            <td class="alphabet__item">Д</td>
+          </tr>
+          <tr>
+            <td class="alphabet__item">Е</td>
+            <td class="alphabet__item">З</td>
+            <td class="alphabet__item">И</td>
+            <td class="alphabet__item">К</td>
+            <td class="alphabet__item">Л</td>
+          </tr>
+          <tr>
+            <td class="alphabet__item">М</td>
+            <td class="alphabet__item">Н</td>
+            <td class="alphabet__item">О</td>
+            <td class="alphabet__item">П</td>
+            <td class="alphabet__item">Р</td>
+          </tr>
+          <tr>
+            <td class="alphabet__item">С</td>
+            <td class="alphabet__item">Т</td>
+            <td class="alphabet__item">У</td>
+            <td class="alphabet__item">Ф</td>
+            <td class="alphabet__item">Х</td>
+          </tr>
+          <tr>
+            <td class="alphabet__item">Ч</td>
+            <td class="alphabet__item">Ш</td>
+            <td class="alphabet__item">Э</td>
+            <td class="alphabet__item">Ю</td>
+            <td class="alphabet__item">Я</td>
+          </tr>
+        </table>
+
+        <ul class="filters__country country-list-a">
+          <li class="country-list-a__item">Афганистан</li>
+          <li class="country-list-a__item">Албания</li>
+          <li class="country-list-a__item">Алжир</li>
+          <li class="country-list-a__item">Андорра</li>
+          <li class="country-list-a__item">Аргентина</li>
+          <li class="country-list-a__item">Армения</li>
+          <li class="country-list-a__item">Австралия</li>
+          <li class="country-list-a__item">Австрия</li>
+          <li class="country-list-a__item">Азербайджан</li>
+        </ul>
+        <button class="filters-bottom-button" type="button">Свернуть</button>
+      </section>
+
+      <section class="find-companion">
+        <h2 class="find-companion__title">Подберите идеального попутчика</h2>
+        <form class="find-companion__filter filters-companion" action="https://echo.htmlacademy.ru/" method="POST">
+          <fieldset class="filters-companion__item">
+            <legend class="filters-companion__title">Хобби</legend>
+            <button class="filters-companion__btn"></button>
+          </fieldset>
+
+
+          <fieldset class="filters-companion__item">
+            <legend class="filters-companion__title">Музыка</legend>
+            <button class="filters-companion__btn"></button>
+            <ul class="filters-companion__music music-list">
+              <li class="music-list__item">
+                <input class="music-list__option" type="checkbox" name="hardrock" id="hardrock" checked>
+                <label class="music-list__title" for="hardrock">Тяжелый рок</label>
+              </li>
+              <li class="music-list__item">
+                <input class="music-list__option" type="checkbox" name="rusrap" id="rusrap">
+                <label class="music-list__title" for="rusrap">Русский рэп</label>
+              </li>
+              <li class="music-list__item">
+                <input class="music-list__option" type="checkbox" name="eudance" id="eudance">
+                <label class="music-list__title" for="eudance">Евроденс</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filters-companion__item">
+            <legend class="filters-companion__title">Еда</legend>
+            <button class="filters-companion__btn"></button>
+          </fieldset>
+
+          <fieldset class="filters-companion__item">
+            <legend class="filters-companion__title">Транспорт</legend>
+            <button class="filters-companion__btn"></button>
+            <ul class="filters-companion__traffic-icon traffic-list">
+              <li class="traffic-list__item traffic-list__item--plane traffic-list__item--on">
+              </li>
+              <li class="traffic-list__item traffic-list__item--bus traffic-list__item--on">
+              </li>
+              <li class="traffic-list__item traffic-list__item--bicycle traffic-list__item--off">
+              </li>
+              <li class="traffic-list__item traffic-list__item--run traffic-list__item--on">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filters-companion__item level-slider">
+            <legend class="level-slider__title">Левел</legend>
+            <div class="level-slider__range-filter">
+              <div class="level-slider__range-controls">
+                <div class="level-slider__scale">
+                  <div class="level-slider__bar"></div>
+                </div>
+                <div class="level-slider__toggle level-slider__toggle-min"></div>
+                <div class="level-slider__toggle level-slider__toggle-max"></div>
+              </div>
+              <div class="level-slider__level-controls">
+                <label class="level-slider__min-level"><input name="min-level" type="text" value="30"></label>
+                <label class="level-slider__max-level"><input name="max-level" type="text" value="100"></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <button class="find-companion__show" type="submit">Показать</button>
+        </form>
+      </section>
 
 <!-- Секция список компаньенов -->
-<!-- ИСПРАВИЬ 6.8. Изображение и имя попутчика — ссылки на страницу его профиля. -->
+
 
       <section class="companions-catalog">
         <div class="container">
