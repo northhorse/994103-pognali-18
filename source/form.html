@@ -68,24 +68,35 @@
             <img src="https://via.placeholder.com/70x70" width="100" height="100">
           </figure>
         </div>
-        <button class="profile__change-photo">Сменить фото</button>
 
+        <form class="profile__form" action="https://echo.htmlacademy.ru/" method="POST">
+          <button class="profile__change-photo">Сменить фото</button>
 
-        <textarea class="profile__tag-field">
-          не понял я тз, давай на консультации разберем этот момент
-        </textarea>
-
-        <p class="profile__traffic-title">транспорт:</p>
-        <ul class="profile__traffic-icon traffic-list">
-          <li class="traffic-list__item traffic-list__item--plane traffic-list__item--on">
-          </li>
-          <li class="traffic-list__item traffic-list__item--bus traffic-list__item--on">
-          </li>
-          <li class="traffic-list__item traffic-list__item--bicycle traffic-list__item--off">
-          </li>
-          <li class="traffic-list__item traffic-list__item--run traffic-list__item--on">
-          </li>
-        </ul>
+          <label class="profile__tagfield-title">
+            <textarea class="profile__tag-field">
+              #бургер #бар #футбол #концерт #крафт
+            </textarea>
+          </label>
+          <p class="profile__traffic-title">транспорт:</p>
+          <ul class="profile__traffic-icon traffic-list">
+            <li class="traffic-list__item">
+              <input class="profile__input" type="checkbox" checked>
+              <span class="profile__checkbox profile--plane"></span>
+            </li>
+            <li class="traffic-list__item">
+              <input class="profile__input" type="checkbox" checked>
+              <span class="profile__checkbox profile--bus"></span>
+            </li>
+            <li class="traffic-list__item">
+              <input class="profile__input" type="checkbox">
+              <span class="profile__checkbox profile--bicycle"></span>
+            </li>
+            <li class="traffic-list__item">
+              <input class="profile__input" type="checkbox" checked>
+              <span class="profile__checkbox profile--walk"></span>
+            </li>
+          </ul>
+        </form>
       </section>
 
       <section class="my-plans">
@@ -119,10 +130,10 @@
           <li class="steps__item"></li>
         </ul>
 
-        <form class="new-plan__add add-plan">
-          <fieldset class="add-plan__first-step first-step">
-            <legend class="first-step__title">Шаг 1. Даты пребывания</legend>
-            <p class="first-step__intro">
+        <form class="new-plan__add add-plan" action="https://echo.htmlacademy.ru/" method="POST">
+          <fieldset class="add-plan__steps dates-of-state">
+            <legend class="dates-of-state__title">Шаг 1. Даты пребывания</legend>
+            <p class="add-plan__intro">
               Укажите предпочтительное
               количество попутчиков, которых
               вы хотели бы позвать в поездку
@@ -130,30 +141,25 @@
               длительность.
             </p>
 
-            <div class="first-step__companions companions-options">
-              <p class="companions-options__title">Ищу попутчиков</p>
-              <span class="companions-options__unit">чел.</span>
-              <div class="companions-options__total">
-                <span class="companions-options__counter">2</span>
-                <span class="companions-options__down">-</span>
-                <span class="companions-options__up">+</span>
-              </div>
-            </div>
+            <label class="dates-of-state__input-title">
+              Ищу попутчиков:
+              <span class="dates-of-state__unit">чел.</span>
+              <input type="number">
+            </label>
 
-            <div class="first-step__durations durations-options">
-              <p class="durations-options__title">Длительность</p>
-              <span class="durations-options__unit">дн.</span>
-              <div class="durations-options__total">
-                <span class="durations-options__counter">2</span>
-                <span class="durations-options__down">-</span>
-                <span class="durations-options__up">+</span>
-              </div>
-            </div>
+            <label class="dates-of-state__input-title">
+              Длительность:
+              <span class="dates-of-state__unit">дн.</span>
+              <input type="number">
+            </label>
 
-            <input class="first-step__children" type="checkbox" name="childrens" id="children" checked>
-            <label for="children">Можно с детьми</label>
 
-            <div class="first-step__calendar-container calendar">
+            <label class="dates-of-state__children-title">
+              <input class="dates-of-state__children" type="checkbox" checked>
+              Можно с детьми
+            </label>
+
+            <div class="dates-of-state__calendar-container calendar">
               <div class="calendar__month month">
                 <span class="month__previous"></span>
                 <span class="month__counter">Март 2019</span>
@@ -161,105 +167,496 @@
               </div>
 
               <table class="calendar__days days">
-                <tr class="days__week week">
-                  <td class="week__item">П</td>
-                  <td class="week__item">В</td>
-                  <td class="week__item">С</td>
-                  <td class="week__item">Ч</td>
-                  <td class="week__item">П</td>
-                  <td class="week__item week__item--red">С</td>
-                  <td class="week__item week__item--red">В</td>
-                </tr>
+                <th class="days__week week">
+                  <td class="days__item">П</td>
+                  <td class="days__item">В</td>
+                  <td class="days__item">С</td>
+                  <td class="days__item">Ч</td>
+                  <td class="days__item">П</td>
+                  <td class="days__item days__item--red">С</td>
+                  <td class="days__item days__item--red">В</td>
+                </th>
+
                 <tr>
-                  <td class="days__item days__item--past-day">23</td>
-                  <td class="days__item days__item--past-day">24</td>
-                  <td class="days__item days__item--past-day">25</td>
-                  <td class="days__item days__item--past-day">26</td>
-                  <td class="days__item days__item--past-day">27</td>
-                  <td class="days__item days__item--past-day">28</td>
-                  <td class="days__item days__item--past-day">1</td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">23</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">24</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">25</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">26</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">27</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">28</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">1</p>
+                      <span class="days__month">мар</span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
                 </tr>
+
                 <tr>
-                  <td class="days__item days__item--past-day">2</td>
-                  <td class="days__item days__item--past-day">3</td>
-                  <td class="days__item days__item--past-day">4</td>
-                  <td class="days__item days__item--past-day">5</td>
-                  <td class="days__item days__item--past-day">6</td>
-                  <td class="days__item days__item--past-day">7</td>
-                  <td class="days__item days__item--past-day">8</td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">2</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">3</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">4</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">5</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">6</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">7</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">8</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
                 </tr>
+
+
                 <tr>
-                  <td class="days__item days__item--past-day">9</td>
-                  <td class="days__item days__item--past-day">10</td>
-                  <td class="days__item days__item--past-day">11</td>
-                  <td class="days__item days__item--past-day">12</td>
-                  <td class="days__item days__item--past-day">13</td>
-                  <td class="days__item days__item--past-day">14</td>
-                  <td class="days__item days__item--past-day">15</td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">9</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">10</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">11</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">12</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">13</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">14</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">15</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
                 </tr>
+
                 <tr>
-                  <td class="days__item days__item--past-day">16</td>
-                  <td class="days__item days__item--past-day">17</td>
-                  <td class="days__item days__item--past-day">18</td>
-                  <td class="days__item days__item--past-day">19</td>
-                  <td class="days__item days__item--past-day">20</td>
-                  <td class="days__item days__item--past-day">21</td>
-                  <td class="days__item days__item--past-day">22</td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">16</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">17</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">18</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">19</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">20</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">21</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">22</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
                 </tr>
+
                 <tr>
-                  <td class="days__item days__item--past-day">23</td>
-                  <td class="days__item days__item--past-day">24</td>
-                  <td class="days__item days__item--past-day">25</td>
-                  <td class="days__item days__item--today days__item--selected">26</td>
-                  <td class="days__item days__item--selected">27</td>
-                  <td class="days__item days__item--selected">28</td>
-                  <td class="days__item">29</td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">23</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">24</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--past-day">
+                    <div class="days__top">
+                      <p class="days__number">25</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--selected">
+                    <div class="days__top">
+                      <p class="days__number">26</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out">Заезд</span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--selected">
+                    <div class="days__top">
+                      <p class="days__number">27</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item days__item--selected">
+                    <div class="days__top">
+                      <p class="days__number">28</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out">Выезд</span>
+                    </div>
+                  </td>
+                  <td class="days__item">
+                    <div class="days__top">
+                      <p class="days__number">29</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out">Выезд</span>
+                    </div>
+                  </td>
                 </tr>
+
                 <tr>
-                  <td class="days__item">30</td>
-                  <td class="days__item">31</td>
-                  <td class="days__item">1</td>
-                  <td class="days__item">2</td>
-                  <td class="days__item">3</td>
-                  <td class="days__item">4</td>
-                  <td class="days__item">5</td>
+                  <td class="days__item">
+                    <div class="days__top">
+                      <p class="days__number">30</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+
+                  <td class="days__item">
+                    <div class="days__top">
+                      <p class="days__number">31</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item">
+                    <div class="days__top">
+                      <p class="days__number">1</p>
+                      <span class="days__month">апр</span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item">
+                    <div class="days__top">
+                      <p class="days__number">2</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item">
+                    <div class="days__top">
+                      <p class="days__number">3</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item">
+                    <div class="days__top">
+                      <p class="days__number">4</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
+                  <td class="days__item">
+                    <div class="days__top">
+                      <p class="days__number">5</p>
+                      <span class="days__month"></span>
+                    </div>
+                    <div class="days__bottom">
+                      <span class="check-in-out"></span>
+                    </div>
+                  </td>
                 </tr>
               </table>
             </div>
-            <a class="first-step__next-step" href="#">Следующий шаг</a>
+            <a class="add-plan__next-step" href="#">Следующий шаг</a>
           </fieldset>
 
-          <fieldset class="add-plan__second-step second-step">
-            <legend class="second-step__title">Шаг 2. Маршрут</legend>
-            <p class="second-step__intro">
+          <fieldset class="add-plan__steps route">
+            <legend class="add-plan__title">Шаг 2. Маршрут</legend>
+            <p class="add-plan__intro">
               Укажите страны, которые вы
               хотели по посетить. Это может
               быть одна или сразу несколько.
             </p>
-            <!-- ох жесть пошла, не знаю как это оформить -->
+<!-- как сделать заголовок для селекта?   -->
+            <ul class="route-list">
+              <li class="route-list__item">
+                <label class="route__select-title">
+                  Выберите страну
+                  <select class="route__select">
+                    <option selected>Босния и Герцеговина</option>
+                    <option>Чехия</option>
+                  </select>
+                </label>
+                <span class="route__decoration">
+                <span class="flag"></span>
+                <button class="route__close"></button>
+              </li>
+              <li class="route-list__item">
+                <select class="route__select">
+                  <option>Босния и Герцеговина</option>
+                  <option selected>Чехия</option>
+                </select>
+                <span class="route__decoration">
+                <span class="flag"></span>
+                <button class="route__close"></button>
+              </li>
+              <li class="route-list__item">
+                <select class="route__select">
+                  <option>Босния и Герцеговина</option>
+                  <option>Чехия</option>
+                </select>
+                <span class="route__decoration">
+                <span class="flag"></span>
+                <button class="route__close"></button>
+              </li>
+              <li class="route-list__item">
+                <button class="route__add">Добавить страну</button>
+                <span class="route__decoration"></span>
+              </li>
+            </ul>
 
-            <a class="second-step__next-step" href="#">Следующий шаг</a>
-            <a class="second-step__back-step" href="#">На шаг назад</a>
+            <a class="add-plan__next-step" href="#">Следующий шаг</a>
+            <a class="add-plan-step" href="#">На шаг назад</a>
           </fieldset>
 
-          <fieldset class="add-plan__third-step third-step">
-            <legend class="third-step__title">Шаг 3. Развлечения</legend>
-            <p class="third-step__intro">
+          <fieldset class="add-plan__steps entertainment">
+            <legend class="add-plan__title">Шаг 3. Развлечения</legend>
+            <p class="add-plan__intro">
               Наконец, расскажите о своих
               планах времяпровождения.
               Можно писать в свободной
               форме и ставить тэги.
             </p>
-            <!-- название страны и флаг -->
-            <textarea>План действий</textarea>
-            <!-- название страны и флаг -->
-            <textarea>
-              Пить пиво и лазить
-              по старым замкам, наслаждаться архитектурой
-              и вот это все.
-            </textarea>
-            <button class="third-step__submit" type="submit">Отправить</button>
-            <a class="third-step__back-step" href="#">На шаг назад</a>
+
+            <label class="entertainment__country">
+              Босния и Герцеговиа
+              <span class="entertainment__flag"></span>
+              <span class="entertainment__decoration"></span>
+              <textarea>План действий</textarea>
+            </label>
+
+
+            <label class="entertainment__country">
+              Чехия
+              <span class="entertainment__flag"></span>
+              <span class="entertainment__decoration"></span>
+              <textarea>
+                Пить пиво и лазить
+                по старым замкам, наслаждаться архитектурой
+                и вот это все.
+              </textarea>
+            </label>
+            <button class="add-plan__submit" type="submit">Отправить</button>
+            <a class="add-plan__back-step" href="#">На шаг назад</a>
           </fieldset>
         </form>
 
